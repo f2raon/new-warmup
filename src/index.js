@@ -1,8 +1,4 @@
 module.exports = function warmup(temperature) {
-  if (temperature === -20) {
-    return -4;
-  }
-  if (temperature === 0) {
-    return 32;
-  }
+  // formula (0°C × 9/5) + 32°C;
+  return (temperature * 9/5) + 32;
 };
